@@ -7,19 +7,18 @@
     <title>subway</title>
     <script src="static/config.js?v=1.0.0" type="text/javascript" charset="utf-8"></script>
     <script>
-      var w = 1;
-      var h = 1;
+      var _root = document.documentElement,
+        resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        resizeCallback = function() {
+          console.log(11);
+          _root.style.fontSize = parseInt(_root.clientWidth / 19.2) + 'px';
+          document.body && (document.body.style.fontSize = 0.32 + 'rem');
+        };
 
-      // if (screen.availWidth > 1366) {
-      w = screen.availWidth / 1366;
-      //}
-
-      //if (screen.availHeight > 768) {
-      h = screen.availHeight / 768;
-      //}
-
-      console.log(w, h);
-      document.documentElement.style.transform = 'scale(' + w + ',' + h + ')';
+      if (document.addEventListener) {
+        window.addEventListener(resizeEvent, resizeCallback, false);
+        document.addEventListener('DOMContentLoaded', resizeCallback, false);
+      }
 
     </script>
   </head>
