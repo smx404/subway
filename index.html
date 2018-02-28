@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>subway</title>
     <script src="static/config.js?v=1.0.0" type="text/javascript" charset="utf-8"></script>
+    <script>
+      var w = 1;
+      var h = 1;
+
+      // if (screen.availWidth > 1366) {
+      w = screen.availWidth / 1366;
+      //}
+
+      //if (screen.availHeight > 768) {
+      h = screen.availHeight / 768;
+      //}
+
+      console.log(w, h);
+      document.documentElement.style.transform = 'scale(' + w + ',' + h + ')';
+
+    </script>
   </head>
 
   <body>

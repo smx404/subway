@@ -1,6 +1,8 @@
 <template>
-    <div>
-        <header>这是header</header>
-        <router-view></router-view>
-    </div>
+    <el-container>
+        <el-header>header</el-header>
+        <el-main>
+            <router-view></router-view>
+        </el-main>
+    </el-container>
 </template>

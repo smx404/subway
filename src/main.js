@@ -9,6 +9,7 @@ import router from './router';
 import store from './store';
 import components from './components';
 import filters from './filters'; //eslint-disable-line
+import 'element-ui/lib/theme-chalk/index.css';
 
 Vue.config.productionTip = false;
 

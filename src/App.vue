@@ -17,5 +17,11 @@
     body {
         background-color: #f3f3f3;
         font-family: '苹方', '微软雅黑', '宋体';
+        width: 1366px;
+        height: 768px;
+        overflow: auto;
+    }
+    body {
+        border: 1px solid red;
     }
 </style>
