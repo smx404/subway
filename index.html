@@ -10,9 +10,8 @@
       var _root = document.documentElement,
         resizeEvent = 'orientationchange' in window ? 'orientationchange' : 'resize',
         resizeCallback = function() {
-          console.log(11);
           _root.style.fontSize = parseInt(_root.clientWidth / 19.2) + 'px';
-          document.body && (document.body.style.fontSize = 0.32 + 'rem');
+          document.body && (document.body.style.fontSize = 0.16 + 'rem');
         };
 
       if (document.addEventListener) {

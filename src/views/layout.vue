@@ -17,6 +17,7 @@
         display: flex;
         flex-direction: column;
         overflow: auto;
+        background-color: #7c8298;
         .g-header {
             height: 0.75rem;
         }
