@@ -37,11 +37,15 @@
             height: 0.4rem;
             padding: 0 0.3rem;
             button {
-                height: 100%;
                 background-color: transparent;
-                padding: 0 0.04rem;
+                padding: 0.04rem;
+                width: 0.36rem;
+                height: 0.36rem;
+                margin: 0 0.04rem;
                 img {
+                    width: 100%;
                     height: 100%;
+                    display: block;
                 }
             }
         }
