@@ -1,10 +1,12 @@
 <template>
     <div class="home">
-        <v-card-container title="实时报警信息" :width="4.3" :height="3">
+        <v-card-container class="timely-alarm" title="实时报警信息">
             <v-timely-alarm :data="timelyAlarm"></v-timely-alarm>
         </v-card-container>
+        <v-card-container class="failure-analysis" title="故障原因分析">
+            <v-failure-analysis></v-failure-analysis>
+        </v-card-container>
     </div>
-
 </template>
 
 <script>
@@ -41,6 +43,18 @@
 <style lang="less" scoped>
     .home {
         background-color: #7c8298;
+        .timely-alarm {
+            left: 0.05rem;
+            top: 0.1rem;
+            width: 4.3rem;
+            height: 3rem;
+        }
+        .failure-analysis {
+            right: 0.05rem;
+            top: 0.1rem;
+            width: 4.3rem;
+            height: 3rem;
+        }
     }
 </style>
 
