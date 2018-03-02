@@ -27,32 +27,23 @@
         border-radius: 4px;
         position: absolute;
         overflow: hidden;
-        box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 1);
         color: #303133;
-        background-color: #676a7b;
-        &:after {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            position: absolute;
-            box-shadow: 0 2px 2px 2px rgb(49, 41, 41) inset;
-        }
+        background: url('~assets/card/bg_card.png') no-repeat;
+        background-size: 100% 100%;
         .card-header {
             font-size: 0.2rem;
-            background-color: #777a8b;
             color: #fff;
             height: 0.3rem;
             position: absolute;
             width: 100%;
             .title {
-                background-color: #c5c8cf;
                 color: #000;
                 height: 0.3rem;
                 font-weight: bold;
                 border-radius: 0.08rem;
                 padding: 0 0.2rem;
+                background: url('~assets/card/bg_title.png') no-repeat;
+                background-size: 100% 100%;
             }
         }
         .card-content {

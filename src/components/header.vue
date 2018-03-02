@@ -24,10 +24,10 @@
         }
         .title {
             text-align: center;
-            font-size: 0.45rem;
+            font-size: 0.4rem;
             text-align: center;
             text-shadow: 0rem 0.06rem #3c3332;
-            color: #d6d0d0;
+            color: #bbc7d7;
             padding-bottom: 0.06rem;
             letter-spacing: 0.01rem;
         }

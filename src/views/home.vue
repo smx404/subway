@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <v-card-container title="实时报警信息" :width="4" :height="3">
+        <v-card-container title="实时报警信息" :width="4.3" :height="3">
             <v-timely-alarm :data="timelyAlarm"></v-timely-alarm>
         </v-card-container>
     </div>

@@ -32,12 +32,11 @@
             justify-content: space-between;
             position: absolute;
             padding: 0 0.2rem;
-            color: #fff;
-            background-color: #393d49;
-            border-radius: 0.1rem;
+            color: #cfd6f0;
             left: 0.05rem;
             right: 0.05rem;
-            border: 1px solid #504141;
+            background: url('~assets/card/bg_theader.png') no-repeat;
+            background-size: 100% 100%;
         }
 
         .table-body {
@@ -50,37 +49,38 @@
                 margin: 0.02rem 0;
                 background-color: #000;
                 box-shadow: 1px 1px 1px #b3aeae inset;
+                min-height: 0.56rem;
                 &.status-1 {
-                    color: yellow;
+                    color: #a17c26;
                     .light {
                         width: 0.1rem;
                         height: 0.1rem;
                         display: block;
-                        background-color: yellow;
+                        background-color: #a17c26;
                         border-radius: 50%;
                         box-shadow: 0 0 10px 4px #fff;
                         margin: 0 auto;
                     }
                 }
                 &.status-2 {
-                    color: red;
+                    color: #cc0000;
                     .light {
                         width: 0.1rem;
                         height: 0.1rem;
                         display: block;
-                        background-color: red;
+                        background-color: #cc0000;
                         border-radius: 50%;
                         box-shadow: 0 0 10px 4px #fff;
                         margin: 0 auto;
                     }
                 }
                 &.status-0 {
-                    color: #fff;
+                    color: #adadad;
                     .light {
                         width: 0.1rem;
                         height: 0.1rem;
                         display: block;
-                        background-color: #fff;
+                        background-color: #adadad;
                         border-radius: 50%;
                         box-shadow: 0 0 10px 4px #fff;
                         margin: 0 auto;
