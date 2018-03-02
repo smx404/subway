@@ -1,16 +1,14 @@
 <template>
-    <div>
-       	19、	搜索页面
-    </div>
+	<div>
+		<v-search></v-search>
+	</div>
 
 </template>
 
 <script>
-    
+	
 </script>
 
 <style>
-   
+
 </style>
-
-
