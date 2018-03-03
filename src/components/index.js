@@ -4,6 +4,8 @@ import timelyAlarm from './timelyAlarm';
 import loginHeader from './loginHeader';
 import loginFooter from './loginFooter';
 import search from './search';
+import failureAnalysis from './failureAnalysis';
+import chart from './chart';
 
 export default {
   header,
@@ -11,5 +13,7 @@ export default {
   timelyAlarm,
   loginHeader,
   loginFooter,
-  search
+  search,
+  failureAnalysis,
+  chart
 };

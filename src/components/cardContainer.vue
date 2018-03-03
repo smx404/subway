@@ -1,5 +1,5 @@
 <template>
-    <div class="card-container" :style="{'width': width + 'rem', 'height': height + 'rem'}">
+    <div class="card-container">
         <div class="card-header">
             <button class="title">{{title}}</button>
         </div>
@@ -11,13 +11,7 @@
 
 <script>
     export default {
-        data() {
-            return {
-
-            };
-        },
-        props: ['title', 'width', 'height']
-
+        props: ['title']
     };
 </script>
 
@@ -44,6 +38,7 @@
                 padding: 0 0.2rem;
                 background: url('~assets/card/bg_title.png') no-repeat;
                 background-size: 100% 100%;
+                margin-left: 0.05rem;
             }
         }
         .card-content {

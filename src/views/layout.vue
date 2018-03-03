@@ -22,6 +22,7 @@
             height: 0.75rem;
         }
         .g-content {
+            position: relative;
             flex-grow: 1;
         }
     }
