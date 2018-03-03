@@ -6,11 +6,10 @@
     export default {
         data() {
             return {
-                id: 'chart1',
+                id: 'failureAnalysis',
                 styleObject: {
                     width: 4.3 + 'rem',
-                    height: 2.7 + 'rem',
-                    backgroundColor: 'black'
+                    height: 2.7 + 'rem'
                 },
                 option: {
                     chart: {
