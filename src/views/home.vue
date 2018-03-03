@@ -3,9 +3,20 @@
         <v-card-container class="timely-alarm" title="实时报警信息">
             <v-timely-alarm :data="timelyAlarm"></v-timely-alarm>
         </v-card-container>
+        <v-card-container class="today-alarm" title="今日报警统计">
+            <v-today-alarm :data="timelyAlarm"></v-today-alarm>
+        </v-card-container>
         <v-card-container class="failure-analysis" title="故障原因分析">
             <v-failure-analysis></v-failure-analysis>
         </v-card-container>
+        <v-card-container class="today-patrol" title="今日巡检比例">
+            <v-today-patrol></v-today-patrol>
+        </v-card-container>
+        <div class="panel">
+            <v-machine-summary class="machine-summary"></v-machine-summary>
+            <v-fixtime-summary class="fixtime-summary"></v-fixtime-summary>
+            <v-counter-summary class="counter-summary"></v-counter-summary>
+        </div>
     </div>
 </template>
 
@@ -49,11 +60,46 @@
             width: 4.3rem;
             height: 3rem;
         }
+        .today-alarm {
+            left: 0.05rem;
+            top: 3.1rem;
+            width: 4.3rem;
+            height: 3rem;
+        }
         .failure-analysis {
             right: 0.05rem;
             top: 0.1rem;
             width: 4.3rem;
             height: 3rem;
+        }
+        .today-patrol {
+            right: 0.05rem;
+            top: 3.1rem;
+            width: 4.3rem;
+            height: 3rem;
+        }
+        .panel {
+            position: absolute;
+            bottom: 0;
+            height: 3.73rem;
+            width: 100%;
+            background-color: #1f2129;
+            .machine-summary {
+                width: 3.83rem;
+                height: 3.73rem;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+            .fixtime-summary {
+                left: 4.35rem;
+                right: 4.35rem;
+                height: 3.93rem;
+                position: absolute;
+                bottom: 0;
+                border-radius: 0.3rem 0.3rem 0 0;
+                background-color: #1f2129;
+            }
         }
     }
 </style>
