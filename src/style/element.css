@@ -1,0 +1,10 @@
+.el-pagination.is-background .el-pager li.active {
+  background: #52596c;
+  color: #fff;
+}
+.el-pagination.is-background .el-pager li.active:hover {
+  color: #fff;
+}
+.el-pagination.is-background .el-pager li:hover {
+  color: #52596c;
+}
