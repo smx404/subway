@@ -12,6 +12,7 @@
         <v-card-container class="today-patrol" title="今日巡检比例">
             <v-today-patrol></v-today-patrol>
         </v-card-container>
+        <v-subway-line class="subway-line"></v-subway-line>
         <div class="panel">
             <v-machine-summary class="machine-summary"></v-machine-summary>
             <v-fixtime-summary class="fixtime-summary"></v-fixtime-summary>
@@ -77,6 +78,13 @@
             top: 3.1rem;
             width: 4.3rem;
             height: 3rem;
+        }
+        .subway-line {
+            position: absolute;
+            top: 0.1rem;
+            left: 4.35rem;
+            right: 4.35rem;
+            height: 5.55rem;
         }
         .panel {
             position: absolute;
