@@ -11,6 +11,7 @@ import counterSummary from './home/counterSummary'; //当月各站故障次数-�
 import loginHeader from './loginHeader';
 import loginFooter from './loginFooter';
 import search from './search';
+import searchList from './searchList';
 
 export default {
   header,
@@ -25,5 +26,6 @@ export default {
   counterSummary,
   loginHeader,
   loginFooter,
-  search
+  search,
+  searchList
 };
