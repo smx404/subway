@@ -13,21 +13,23 @@ import solidgauge from './home/solidgauge'; //活力图
 import loginHeader from './loginHeader';
 import loginFooter from './loginFooter';
 import search from './search';
+import searchList from './searchList';
 
 export default {
-    header,
-    cardContainer,
-    chart,
-    timelyAlarm,
-    failureAnalysis,
-    todayAlarm,
-    todayPatrol,
-    subwayLine,
-    machineSummary,
-    fixtimeSummary,
-    counterSummary,
-    solidgauge,
-    loginHeader,
-    loginFooter,
-    search
+  header,
+  cardContainer,
+  chart,
+  timelyAlarm,
+  failureAnalysis,
+  todayAlarm,
+  todayPatrol,
+  subwayLine,
+  machineSummary,
+  fixtimeSummary,
+  counterSummary,
+  solidgauge,
+  loginHeader,
+  loginFooter,
+  search,
+  searchList
 };
