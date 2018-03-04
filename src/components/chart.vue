@@ -1,5 +1,5 @@
 <template>
-    <div :id="id" :style="styleObject">{{styleObject}}</div>
+    <div :id="id" :style="styleObject"></div>
 </template>
 
 <script>
@@ -7,9 +7,6 @@
 
     export default {
         props: ['id', 'option', 'styleObject'],
-        created() {
-            console.log(this.styleObject);
-        },
         mounted() {
             HighCharts.chart(this.id, this.option);
         }
