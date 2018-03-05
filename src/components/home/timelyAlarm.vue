@@ -37,6 +37,7 @@
             right: 0.05rem;
             background: url('~assets/card/bg_theader.png') no-repeat;
             background-size: 100% 100%;
+            padding-bottom: 0.05rem;
         }
 
         .table-body {

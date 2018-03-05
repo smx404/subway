@@ -4,7 +4,9 @@
             <button class="title">{{title}}</button>
         </div>
         <div class="card-content">
-            <slot></slot>
+            <div>
+                <slot></slot>
+            </div>
         </div>
     </div>
 </template>
@@ -45,6 +47,11 @@
             box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1) inset;
             height: 100%;
             padding-top: 0.3rem;
+            & > div {
+                border-radius: 0.05rem;
+                overflow: hidden;
+                border-top: 1px solid #383737;
+            }
         }
     }
 </style>

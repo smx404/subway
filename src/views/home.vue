@@ -105,8 +105,6 @@
                 height: 3.93rem;
                 position: absolute;
                 bottom: 0;
-                border-radius: 0.3rem 0.3rem 0 0;
-                background-color: #1f2129;
             }
             .counter-summary {
                 width: 4.3rem;
