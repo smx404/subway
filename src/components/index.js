@@ -14,6 +14,7 @@ import loginHeader from './loginHeader';
 import loginFooter from './loginFooter';
 import search from './search';
 import searchList from './searchList';
+import subSearch from './subSearch'; //列表上面的筛选搜索
 
 export default {
   header,
@@ -31,5 +32,6 @@ export default {
   loginHeader,
   loginFooter,
   search,
-  searchList
+  searchList,
+  subSearch
 };

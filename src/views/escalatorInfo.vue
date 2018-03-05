@@ -1,16 +1,16 @@
 <template>
     <div>
-       	13、	人员情况明细
+        扶梯信息列表
     </div>
 
 </template>
 
 <script>
-    
+
 </script>
 
 <style>
-   
+
 </style>
 
 
