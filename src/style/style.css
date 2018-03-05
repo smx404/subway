@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'number-font'; /*字体名称*/
+    src: url('./fonts/number-font.ttf'); /*字体源文件*/
+}
+
 html,
 body,
 ul,

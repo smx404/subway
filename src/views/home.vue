@@ -108,6 +108,13 @@
                 border-radius: 0.3rem 0.3rem 0 0;
                 background-color: #1f2129;
             }
+            .counter-summary {
+                width: 4.3rem;
+                height: 3.73rem;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
         }
     }
 </style>

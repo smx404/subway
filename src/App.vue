@@ -17,6 +17,6 @@
         font-family: '苹方', '微软雅黑', '宋体';
         width: 100%;
         height: 100%;
-        overflow: hidden;
+        overflow: auto;
     }
 </style>

@@ -1,19 +1,25 @@
 <template>
-    <v-chart :id="id" :option="option" :styleObject="styleObject"></v-chart>
+    <div class="txt-center">
+        <v-chart :id="id" :option="option" :styleObject="styleObject"></v-chart>
+        <div class="title">{{title}}</div>
+    </div>
 </template>
 
 <script>
     export default {
-        props: ['id', 'title', 'total', 'current'],
+        props: ['id', 'title', 'max', 'current'],
         data() {
+            let _this = this;
+
             return {
                 styleObject: {
-                    width: 0.8 + 'rem',
-                    height: 0.8 + 'rem'
+                    width: 1.1 + 'rem',
+                    height: 1.1 + 'rem'
                 },
                 option: {
                     chart: {
-                        type: 'solidgauge'
+                        type: 'solidgauge',
+                        backgroundColor: 'transparent'
                     },
                     title: null,
                     pane: {
@@ -22,7 +28,9 @@
                         startAngle: 90,
                         endAngle: -270,
                         background: {
-                            innerRadius: '90%',
+                            backgroundColor: '#2d74bd',
+                            borderWidth: 0,
+                            innerRadius: '85%',
                             outerRadius: '100%',
                             shape: 'arc'
                         }
@@ -35,12 +43,8 @@
                         minorTickInterval: null,
                         minorTickWidth: 1,
                         tickWidth: 0,
-                        title: {
-                            y: -70,
-                            text: '速度'
-                        },
                         labels: {
-                            y: 190
+                            enabled: false
                         },
                         min: 0,
                         max: 912
@@ -48,27 +52,29 @@
                     plotOptions: {
                         solidgauge: {
                             dataLabels: {
-                                y: 10,
+                                y: 23,
                                 borderWidth: 0,
                                 useHTML: true
                             }
                         }
-                    }, credits: {
+                    },
+                    credits: {
                         enabled: false
                     },
                     series: [{
-                        name: '速度',
-                        data: [48],
+                        data: [{
+                            y: _this.current,
+                            color: '#0ed4eb'
+                        }],
                         dataLabels: {
-                            format: '<div style="text-align:center"><span style="font-size:25px;color:' +
-                            ('black') + '">{y}</span><br/>' +
-                            '<span style="font-size:12px;color:silver">km/h</span></div>'
+                            format: `<div style="text-align:center">
+                                        <span style="font-size:0.12rem;color:#0ed4eb">{y}</span>
+                                        <div style="background-color:#a0a1a2;height:0.02rem;width:180%;margin-left:-40%;"></div>
+                                        <span style="font-size:0.12rem;color:#0ed4eb">${_this.max}</span>
+                                    </div>`
                         },
-                        innerRadius: 90,
-                        radius: 100,
-                        tooltip: {
-                            valueSuffix: ' km/h'
-                        }
+                        innerRadius: 85,
+                        radius: 100
                     }],
                     legend: {
                         enabled: false
@@ -80,6 +86,10 @@
 </script>
 
 <style lang="less" scoped>
-
+    .title {
+        text-align: center;
+        color: #fff;
+        font-size: 0.18rem;
+    }
 </style>
 
