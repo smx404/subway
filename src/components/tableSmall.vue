@@ -1,25 +1,21 @@
 <template>
     <div class="table">
         <div class="table-header flex">
-            <span>序号</span>
-            <span>日期</span>
-            <span>报警事件</span>
-            <span>状态</span>
+            <div class="column" v-for="(item, index) in title" :style="{width: widths[index] + '%'}">{{item}}</div>
         </div>
         <ul class="table-body">
-            <li class="flex" v-for="(item, index) in data" :class="'status-' + item.type">
-                <span class="col1">{{index + 1}}</span>
-                <span class="col2">{{item.datetime}}</span>
-                <span class="col3">{{item.event}}</span>
-                <span class="col4"><span class="light"></span></span>
+            <li class="flex" v-for="row in list">
+                <div class="column" :style="{width: widths[index] + '%'}" v-for="(values, keys, index) in row">{{values}}</div>
             </li>
         </ul>
+
+        <button class="more">更多</button>
     </div>
 </template>
 
 <script>
     export default {
-        props: ['data']
+        props: ['title', 'list', 'widths']
     };
 </script>
 
@@ -27,6 +23,15 @@
     .table {
         width: 100%;
         height: 100%;
+        background-color: #525667;
+        padding-top: 0.06rem;
+        border-radius: 0.1rem;
+        overflow: hidden;
+        position: relative;
+        .column {
+            color: #fff;
+            text-align: center;
+        }
         .table-header {
             height: 0.3rem;
             justify-content: space-between;
@@ -42,15 +47,15 @@
 
         .table-body {
             height: 100%;
-            padding: 0.3rem 0.05rem 0.05rem 0.05rem;
+            padding: 0.3rem 0.1rem 0.05rem 0.1rem;
             overflow-y: auto;
             font-size: 0.14rem;
             li {
                 padding: 0.1rem;
-                margin: 0.02rem 0;
+                margin: 0.06rem 0;
                 background-color: #000;
-                box-shadow: 1px 1px 1px #b3aeae inset;
-                min-height: 0.56rem;
+                box-shadow: 0px -1px 1px #f3f3f3 inset;
+                min-height: 0.33rem;
                 &.status-1 {
                     color: #a17c26;
                     .light {
@@ -103,6 +108,17 @@
                 width: 0.4rem;
                 flex: 0 0 auto;
             }
+        }
+        .more {
+            position: absolute;
+            right: 0.1rem;
+            bottom: 0.1rem;
+            border-radius: 0.05rem;
+            color: #fff;
+            background-color: #65666a;
+            font-size: 0.16rem;
+            box-shadow: -1px -1px 1px 1px #929292 inset;
+            padding: 0.02rem 0.08rem;
         }
     }
 </style>
